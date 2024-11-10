@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Música -->
+    <audio id="music" loop>
+        <source src="./cancionD.mp3" type="audio/mp3">
+        Tu navegador no soporta audio.
+    </audio>
+
+    <!-- Contenedor de corazones -->
+    <div id="heart-container" class="heart-container"></div>
+
+    <!-- Caja de regalo -->
+    <div id="gift-box"></div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <header>
+            <h1>¡Feliz Cumpleaños, Mi Amor!</h1>
+        </header>
+
+        <!-- Mensaje de bienvenida -->
+        <section id="message">
+            <b><p>Hola Hermosa!</p></b>
+            <p>Hoy celebramos el maravilloso ser que eres, con todo mi amor, hoy es tu día especial.</p>
+        </section>
+
+        <!-- Galería de fotos -->
+        <section id="photo-gallery">
+            <h2>Momentos Juntos</h2>
+            <div class="gallery-wrapper">
+                <div id="left-message" class="dynamic-message"></div>
+                <div class="gallery">
+                    <img src="foto1.jpg" alt="Foto 1" class="photo">
+                    <img src="foto2.jpg" alt="Foto 2" class="photo">
+                    <img src="foto3.jpg" alt="Foto 3" class="photo">
+                    <img src="foto4.jpg" alt="Foto 4" class="photo">
+                    <img src="foto5.jpg" alt="Foto 5" class="photo">
+                    <img src="foto6.jpg" alt="Foto 6" class="photo">
+                    <img src="foto7.jpg" alt="Foto 7" class="photo">
+                    <img src="foto8.jpg" alt="Foto 8" class="photo">
+                    <img src="foto9.jpg" alt="Foto 9" class="photo">
+                    <img src="foto10.jpg" alt="Foto 10" class="photo">
+                    <img src="foto11.jpg" alt="Foto 11" class="photo">
+                    <img src="foto12.jpg" alt="Foto 12" class="photo">
+                </div>
+                <div id="right-message" class="dynamic-message"></div>
+            </div>
+        </section>
+        <br>
+
+        <!-- Galería de videos -->
+        <section id="video-gallery">
+            <h2>Algunos recuerdos en Movimiento</h2>
+            <br>
+            <div class="gallery">
+                <video controls class="video">
+                    <source src="video1.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+                <video controls class="video">
+                    <source src="video2.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+                <video controls class="video">
+                    <source src="video3.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+                <video controls class="video">
+                    <source src="video4.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+                <video controls class="video">
+                    <source src="video5.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+                <video controls class="video">
+                    <source src="video6.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+                <video controls class="video">
+                    <source src="video7.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+                <video controls class="video">
+                    <source src="video8.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+            </div>
+        </section>
+
+        <!-- Mensajes especiales -->
+        <section id="messages">
+            <h2>Dios te Bendiga</h2>
+            <div class="quotes">
+                <p class="quote">"Que este día especial sea el comienzo de otro año lleno de felicidad. ¡Feliz cumpleaños!"</p>
+                <p class="quote">"Felicidades. ¡Eres genial y tú sin enterarte!"</p>
+                <p class="quote">"Te amo vida mia,Dios te bendiga(conmigo a tu lado)"</p>
+                <p class="quote">"Que la vida te llene de paz hoy y siempre."</p>
+                <p class="quote">"Como un buen vino, sólo mejoras con la edad."</p>
+                <p class="quote">"Espero cumplas mucho más y envejezcas a mi lado."</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contenedor de imagen maximizada -->
+    <div id="overlay" class="overlay">
+        <img id="overlay-image" src="" alt="Imagen Maximizada">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

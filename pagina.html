@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feliz Cumpleaños, Amor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Música -->
+    <audio id="music" autoplay loop >
+        <source src="./cancionD.mp3" type="audio/mp3">
+        Tu navegador no soporta audio.
+    </audio>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <header>
+            <h1>¡Feliz Cumpleaños, Mi Amor!</h1>
+        </header>
+        
+        <!-- Mensaje de bienvenida -->
+        <section id="message">
+            <p>Hoy celebramos el maravilloso ser que eres, con todo mi amor, hoy es tu día especial.</p>
+        </section>
+        
+        <!-- Galería de fotos -->
+        <section id="photo-gallery">
+            <h2>Momentos Juntos</h2>
+            <div class="gallery">
+                <img src="foto1.jpg" alt="Foto 1" class="photo">
+                <img src="foto2.jpg" alt="Foto 2" class="photo">
+                <img src="foto3.jpg" alt="Foto 3" class="photo">
+                <!-- Agrega más fotos -->
+            </div>
+        </section>
+
+        <!-- Galería de videos -->
+        <section id="video-gallery">
+            <h2>Recuerdos en Movimiento</h2>
+            <div class="gallery">
+                <video controls class="video">
+                    <source src="video1.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+                <video controls class="video">
+                    <source src="video2.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+                <!-- Agrega más videos -->
+            </div>
+        </section>
+        
+        <!-- Mensajes especiales -->
+        <section id="messages">
+            <h2>Frases de Amor</h2>
+            <div class="quotes">
+                <p class="quote">"Te amo más de lo que las palabras pueden expresar."</p>
+                <p class="quote">"Cada día contigo es un regalo de Dios."</p>
+                <p class="quote">"Eres la razón por la que sonrío cada mañana."</p>
+            </div>
+        </section>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
