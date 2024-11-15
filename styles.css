@@ -172,3 +172,63 @@ header h1 {
     object-fit: contain;
 }
 
+/* Tarjeta de mensaje */
+.message-card {
+    display: none; /* Oculta la tarjeta inicialmente */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    padding: 20px;
+    background: #fff8e1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #deb887;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1001;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color: #5b3a29;
+}
+
+/* Botón de cierre para la tarjeta */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #5b3a29;
+    cursor: pointer;
+}
+
+.card-message {
+    margin-top: 20px;  
+}
+
+/* Fondo difuminado */
+.blur-background {
+    display: none; /* Oculto inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    backdrop-filter: blur(8px); /* Difuminado */
+    z-index: 1000; /* Colocado justo debajo de la tarjeta */
+}
+
+/* Estilo para el título de la tarjeta */
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #5a3d1e;
+}
+
+

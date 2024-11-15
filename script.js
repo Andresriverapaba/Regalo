@@ -6,9 +6,16 @@ window.onload = () => {
     const overlay = document.getElementById("overlay");
     const overlayImage = document.getElementById("overlay-image");
 
+    // Referencias para la tarjeta de mensaje y el fondo difuminado
+    const messageCard = document.getElementById("message-card");
+    const closeCardButton = document.getElementById("close-card");
+    const blurBackground = document.getElementById("blur-background");
+
     // Script para cambiar los mensajes dinámicamente
     const messages = [
         "Nuestro primer paseo por el pueblo",
+        "Nuestro primer abrazo",
+        "La vez que nos mojamos",
         "La vez que nos reímos tanto juntos",
         "Ese día en la playa, no lo olvidaré",
         "Esa noche en la que hablamos por horas",
@@ -16,6 +23,8 @@ window.onload = () => {
         "¿Quieres que me haga el muerto?.",
         "Hola Hermosa.",
         "Los viajes que hemos hecho juntos.",
+        "Los viajes que faltan.",
+        "Te Amo.",
         "Hola Culona.",
         "¡FELIZ CUMPLEAÑOS!.",
     ];
@@ -47,8 +56,8 @@ window.onload = () => {
     });
 
     // Cerrar imagen maximizada
-    document.getElementById('overlay').addEventListener('click', function () {
-        this.style.display = 'none';
+    overlay.addEventListener("click", function () {
+        overlay.style.display = "none";
     });
 
     // Al hacer clic en la caja de regalo
@@ -58,12 +67,20 @@ window.onload = () => {
         setTimeout(() => {
             giftBox.style.display = "none";
             container.style.display = "block";
+            messageCard.style.display = "block";  // Mostrar la tarjeta de mensaje
+            blurBackground.style.display = "block";  // Mostrar el fondo difuminado
 
             // Crear corazones flotantes
             for (let i = 0; i < 50; i++) {
                 createHeart();
             }
         }, 500);
+    });
+
+    // Cerrar la tarjeta de mensaje
+    closeCardButton.addEventListener("click", () => {
+        messageCard.style.display = "none";
+        blurBackground.style.display = "none";  // Ocultar el fondo difuminado
     });
 
     // Crear corazón animado
@@ -80,19 +97,6 @@ window.onload = () => {
             heart.remove();
         });
     }
-
-    // Mostrar imagen en overlay
-    document.querySelectorAll(".photo").forEach(photo => {
-        photo.addEventListener("click", () => {
-            overlayImage.src = photo.src;
-            overlay.style.display = "flex";
-        });
-    });
-
-    // Cerrar overlay al hacer clic en cualquier parte
-    overlay.addEventListener("click", () => {
-        overlay.style.display = "none";
-    });
 
     // Mostrar los mensajes a los lados de los videos cuando se hace scroll
     const videoGallery = document.getElementById('video-gallery');
