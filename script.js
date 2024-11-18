@@ -5,6 +5,7 @@ window.onload = () => {
     const heartContainer = document.getElementById("heart-container");
     const overlay = document.getElementById("overlay");
     const overlayImage = document.getElementById("overlay-image");
+    const musicControl = document.getElementById("music-control");
 
     // Referencias para la tarjeta de mensaje y el fondo difuminado
     const messageCard = document.getElementById("message-card");
@@ -60,6 +61,24 @@ window.onload = () => {
         overlay.style.display = "none";
     });
 
+     // Botón de música
+ musicControl.addEventListener("click", () => {
+    if (music.paused) {
+        music.play();
+        musicControl.textContent = "Pausar Música";
+    } else {
+        music.pause();
+        musicControl.textContent = "Reproducir Música";
+    }
+});
+
+
+closeCardButton.addEventListener("click", () => {
+    messageCard.style.display = "none";
+    blurBackground.style.display = "none";
+    musicControl.style.display = "block"; // Mostrar el botón de control de música
+});
+
     // Al hacer clic en la caja de regalo
     giftBox.addEventListener("click", () => {
         music.play();
@@ -109,3 +128,4 @@ window.onload = () => {
         currentMessageIndex = (currentMessageIndex + 1) % messages.length;
     });
 };
+

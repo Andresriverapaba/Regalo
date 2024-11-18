@@ -231,4 +231,21 @@ header h1 {
     color: #5a3d1e;
 }
 
+.music-control {
+    position: fixed;
+    bottom: 20px; /* Mantiene el botón cerca del borde inferior */
+    right: 20px; /* Lo posiciona cerca del borde derecho */
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff5f6d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
 
+.music-control:hover {
+    background-color: #ff2f3f;
+}
